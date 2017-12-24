@@ -11,6 +11,11 @@ font pango:monospace 8
 floating_modifier $mod
 # Wallpaper
 exec_always feh --bg-scale ~/Pictures/wallpaper.*
+# Move settings
+set $down "j"
+set $up "k"
+set $right "l"
+set $left "h"
 
 # I3 Bar
 bar {
@@ -44,23 +49,23 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Focus window
 # Focus to the left window
-bindsym $mod+h focus left
+bindsym $mod+$left focus left
 # Focus to the bottom window
-bindsym $mod+j focus down
+bindsym $mod+$down focus down
 # Focus to the top window
-bindsym $mod+k focus up
+bindsym $mod+$up focus up
 # Focus to the right window
-bindsym $mod+l focus right
+bindsym $mod+$right focus right
 
 # Move window
 # Move window to the left
-bindsym $mod+Shift+h move left
+bindsym $mod+Shift+$left move left
 # Move window to the botton
-bindsym $mod+Shift+j move down
+bindsym $mod+Shift+$down move down
 # Move window to the top
-bindsym $mod+Shift+k move up
+bindsym $mod+Shift+$up move up
 # Move window to the right
-bindsym $mod+Shift+l move right
+bindsym $mod+Shift+$right move right
 
 # Split
 # split horizontal
@@ -123,13 +128,13 @@ bindsym $mod+Shift+0 move container to workspace 10
 # Resize shortcuts
 mode "resize" {
 	# Pressing left will shrink the window’s width.
-        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym $left resize shrink width 10 px or 10 ppt
 	# Pressing right will grow the window’s width.
-        bindsym j resize grow height 10 px or 10 ppt
+        bindsym $down resize grow height 10 px or 10 ppt
 	# Pressing up will shrink the window’s height.
-        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym $up resize shrink height 10 px or 10 ppt
 	# Pressing down will grow the window’s height.
-        bindsym l resize grow width 10 px or 10 ppt
+        bindsym $right resize grow width 10 px or 10 ppt
 
 	# Escape "resize" mode with enter
         bindsym Return mode "default"
