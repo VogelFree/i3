@@ -27,6 +27,8 @@ set $workspace7 "7:"
 set $workspace8 "8:"
 set $workspace9 "9:"
 set $workspace0 "10:"
+# Assignments
+assign [class="Chromium-browser"] $workspace2
 
 # I3 Bar
 bar {
