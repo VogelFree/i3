@@ -9,6 +9,8 @@ set $mod Mod4
 font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+# Wallpaper
+exec_always feh --bg-scale ~/Pictures/wallpaper.*
 
 # I3 Bar
 bar {
