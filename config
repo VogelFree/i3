@@ -6,7 +6,7 @@
 # Set the mod key
 set $mod Mod4
 # Set the font for window titles and bar
-font pango:monospace 8
+font pango:System San Francisco Display 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 # Wallpaper
