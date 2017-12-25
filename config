@@ -49,7 +49,7 @@ client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color		#00ff00
 hide_edge_borders both
 # I3 Bar
 bar {
-        status_command i3status
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	colors {
 		background	$bg-color
 		separator	#757575
